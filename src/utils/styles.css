@@ -1,0 +1,9 @@
+.button:hover {
+    box-shadow: 5px 5px #4BD8D5;
+    transition: 0.4s;
+    transform: translate(-10px, -5px);
+}
+
+.button {
+    transition: 0.4s;
+}
