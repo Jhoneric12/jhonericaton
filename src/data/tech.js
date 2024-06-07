@@ -14,56 +14,67 @@ export const Technologies = [
     {
         id: 1,
         lang: 'ReactJs',
-        icon: ReactJs
+        icon: ReactJs,
+        alt: 'React'
     },
     {
         id: 2,
         lang: 'NextJs',
-        icon: NextJs
+        icon: NextJs,
+        alt: 'NextJs'
     },
     {
         id: 3,
         lang: 'Laravel',
-        icon: Laravel
+        icon: Laravel,
+        alt: 'Laravel'
     },
     {
         id: 4,
         lang: 'Javascript',
-        icon: JavaS
+        icon: JavaS,
+        alt: 'Javascript'
     },
     {
         id: 5,
         lang: 'Tailwind',
-        icon: TailW
+        icon: TailW,
+        alt: 'Tailwind'
     },
     {
         id: 6,
         lang: 'CSS',
-        icon: Css
+        icon: Css,
+        alt: 'CSS'
     },
     {
         id: 7,
         lang: 'HTML',
-        icon: html
+        icon: html,
+        alt: 'HTML'
     },
     {
         id: 8,
         lang: 'PHP',
-        icon: Php
+        icon: Php,
+        alt: 'PHP'
     },
     {
         id: 9,
         lang: 'MySql',
-        icon: MySql
+        icon: MySql,
+        alt: 'MYSQL'
     },
     {
         id: 10,
         lang: 'Figma',
-        icon: Figma
+        icon: Figma,
+        alt: 'Figma'
     },
     {
         id: 11,
         lang: 'Postman',
-        icon: PostMan
+        icon: PostMan,
+        alt: 'Postman'
     },
 ];
