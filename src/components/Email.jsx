@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Email() {
   return (
-    <div className='hidden lg:fixed lg:bottom-0 lg:right-16 lg:flex lg:flex-col lg:items-center lg:gap-28 w-0'>
+    <div className='hidden lg:fixed lg:bottom-0 lg:right-16 lg:flex lg:flex-col lg:items-center lg:gap-28 w-0 drop-shadow-sm'>
         <div className='rotate-90 hover:translate-y-[-5px] transition duration-200'>
             <Link href={'mailto:jhonericaton@gmail.com'} className='font-medium text-main-color dark:text-title-color
                  hover:text-accent-color dark:hover:text-accent-color
