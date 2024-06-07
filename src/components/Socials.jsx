@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Socials() {
   return (
-    <div className='lg:fixed bottom-0 left-16 flex flex-col items-center gap-6'>
+    <div className='hidden lg:fixed lg:bottom-0 lg:left-16 lg:flex lg:flex-col lg:items-center gap-6'>
         <Link href={'https://www.linkedin.com/in/jhon-eric-aton-5535a8245/'} target='blank'>
             <ImLinkedin2 className='text-main-color dark:text-title-color text-xl hover:text-accent-color hover:translate-y-[-5px] dark:hover:text-accent-color transition duration-200'/>
         </Link>
