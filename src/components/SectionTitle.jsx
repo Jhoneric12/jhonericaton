@@ -10,6 +10,7 @@ export default function SectionTitle({title, subTitle}) {
             width={20}
             height={10}
             className='w-auto h-auto'
+            alt='CurlyBrace'
         />
         <h1 className='text-main-color dark:text-title-color lg:text-xl'>
             <span>{title}</span>
