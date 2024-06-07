@@ -34,7 +34,7 @@ export default function AboutMe() {
                 <div className='grid grid-cols-3 gap-10 mt-10'>
                     {
                         Technologies.map((tech) => (
-                            <div className='flex flex-col items-center gap-2 text-center'>
+                            <div className='flex flex-col items-center gap-2 text-center' key={tech.id}>
                                 <Image src={tech.icon} alt={tech.alt}/>
                                 <h2 className='text-main-color dark:text-title-color mt-auto text-xs'>{tech.lang}</h2>
                             </div>
