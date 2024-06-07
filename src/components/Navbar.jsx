@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import DarkMyLogo from '../assets/logo-dark.png'
 import LightMyLogo from '../assets/logo-light.png'
@@ -21,6 +21,23 @@ export default function Navbar() {
     setIsDark(!isDark)
   }
 
+  useEffect(() => {
+    let scrollPos = 0;
+    const navbar = document.querySelector('.navbar')
+
+    window.addEventListener('scroll', () => {
+      if ((document.body.getBoundingClientRect()).top > scrollPos) {
+        navbar.classList.add('up')
+        console.log('UP')
+      }
+      else {
+        scrollPos = (document.body.getBoundingClientRect()).top;
+        navbar.classList.add('down')
+      }
+    })
+
+  }, [])
+
   return (
     <div>
       <div className={`${isOpen ? 'absolute h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
@@ -33,7 +50,7 @@ export default function Navbar() {
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
       </div>
-      <nav className='flex items-center justify-between px-6 py-4 md:px-10 md:py-6 lg:px-16 lg:py-8 w-full fixed z-10'>
+      <nav className='navbar flex items-center justify-between px-6 py-4 md:px-10 md:py-6 lg:px-16 lg:py-6 w-full absolute z-10'>
         <div className='w-auto h-auto'>
           {
             isDark ? 

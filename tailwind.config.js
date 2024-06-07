@@ -21,7 +21,7 @@ module.exports = {
         'accent-color': '#4BD8D5',
         'sub-title-color': '#9A9A9A',
 
-        'light-main-color': '#fcfcfc',
+        'light-main-color': '#F4F4F4',
         'light-text-color': '#27374D',
       }
     },
