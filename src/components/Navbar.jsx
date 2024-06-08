@@ -6,6 +6,7 @@ import DarkMyLogo from '../assets/logo-dark.png'
 import LightMyLogo from '../assets/logo-light.png'
 import useDarkMode from '@/Hooks/useDarkMode'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Navbar() {
 
@@ -40,7 +41,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className={`${isOpen ? 'fixed h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
+      <motion.div  initial={{ x: '100%' }} animate={{ x: isOpen ? 0 : '100%' }} transition={{ type: 'tween', duration: 0.5 }} className={`${isOpen ? 'fixed h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
           <div className='flex flex-col gap-10 text-center text-lg text-main-color dark:text-title-color'>
             <Link href={'#'}>Works</Link>
             <Link href={'#'}>About Me</Link>
@@ -49,7 +50,7 @@ export default function Navbar() {
           <svg onClick={handleOpenMenu} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className='w-6 h-6 absolute top-6 right-6 text-main-color dark:text-title-color'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
-      </div>
+      </motion.div>
       <nav className='navbar flex items-center justify-between px-6 py-4 md:px-10 md:py-6 lg:px-16 lg:py-6 w-full absolute z-10'>
         <div className='w-auto h-auto'>
           {
