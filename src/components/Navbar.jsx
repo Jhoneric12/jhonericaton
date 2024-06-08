@@ -7,6 +7,7 @@ import LightMyLogo from '../assets/logo-light.png'
 import useDarkMode from '@/Hooks/useDarkMode'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import '../utils/styles.css'
 
 export default function Navbar() {
 
@@ -26,21 +27,30 @@ export default function Navbar() {
     let scrollPos = 0;
     const navbar = document.querySelector('.navbar')
 
-    window.addEventListener('scroll', () => {
-      if ((document.body.getBoundingClientRect()).top > scrollPos) {
-        navbar.classList.add('up')
-        console.log('UP')
-      }
-      else {
-        scrollPos = (document.body.getBoundingClientRect()).top;
-        navbar.classList.add('down')
-      }
-    })
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  }, [])
+      if (scrollTop > scrollPos) {
+        navbar.classList.add('up');
+        navbar.classList.remove('down');
+      } else {
+        navbar.classList.add('down');
+        navbar.classList.remove('up');
+      }
+
+        scrollPos = scrollTop;
+      }
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+
+  })
 
   return (
-    <div>
+    <div className='z-30'>
       <motion.div  initial={{ x: '100%' }} animate={{ x: isOpen ? 0 : '100%' }} transition={{ type: 'tween', duration: 0.5 }} className={`${isOpen ? 'fixed h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
           <div className='flex flex-col gap-10 text-center text-lg text-main-color dark:text-title-color'>
             <Link href={'#'}>Works</Link>
@@ -51,7 +61,7 @@ export default function Navbar() {
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
       </motion.div>
-      <nav className='navbar flex items-center justify-between px-6 py-4 md:px-10 md:py-6 lg:px-16 lg:py-6 w-full absolute z-10'>
+      <nav className='navbar flex items-center justify-between px-6 py-4 md:px-10 md:py-6 lg:px-16 lg:py-6 w-full fixed z-30 backdrop-blur-sm'>
         <div className='w-auto h-auto'>
           {
             isDark ? 

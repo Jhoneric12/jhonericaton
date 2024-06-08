@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className='bg-light-main-color dark:bg-main-color transition-colors duration-300 selection:bg-accent-color antialiased'>
       <Navbar/>
-      <div className="z-10">
+      <div className="z-0">
         <Hero/>
         <Socials/>
         <Email/>
