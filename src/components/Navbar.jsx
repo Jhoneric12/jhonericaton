@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <div className={`${isOpen ? 'absolute h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
+      <div className={`${isOpen ? 'fixed h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
           <div className='flex flex-col gap-10 text-center text-lg text-main-color dark:text-title-color'>
             <Link href={'#'}>Works</Link>
             <Link href={'#'}>About Me</Link>
