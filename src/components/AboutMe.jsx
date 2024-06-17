@@ -13,7 +13,7 @@ export default function AboutMe() {
         />
         <div className='flex flex-col lg:flex-row gap-14 py-20'>
             <div className='flex flex-col items-start gap-4 lg:w-[60%]'>
-                <h1 className='text-main-color dark:text-title-color text-3xl lg:text-4xl font-bold mb-4'>Hi there!</h1>
+                <h1 className='text-main-color dark:text-title-color text-2xl lg:text-3xl font-bold mb-4'>Hi there!</h1>
                 <p className='text-main-color dark:text-title-color leading-7'>I am <span className='text-accent-color font-medium'>Jhon Eric Aton</span>, a passionate 
                     coder hailing from Antipolo, Rizal. Currently, I'm studyin at the <span className='text-accent-color font-medium'>University of Rizal System</span>, 
                     pursuing a <span className='text-accent-color font-medium'>Bachelor of Science in Information Technology</span>.
