@@ -9,7 +9,7 @@ export default function Works() {
             subTitle={'Works'}
         />
         <div className='text-center py-20'>
-            <h1 className='text-main-color dark:text-title-color font-semibold text-lg'>Modifying projects...🤪🤪🤪</h1>
+            <h1 className='text-main-color dark:text-title-color font-regular'>Upcoming projects... To see my projects, please click the github icon on the left.</h1>
         </div>
     </section>
   )

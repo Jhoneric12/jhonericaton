@@ -18,9 +18,12 @@ export default function MyName() {
               <ImLinkedin2 className='text-main-color dark:text-title-color text-xl hover:text-accent-color dark:hover:text-accent-color transition duration-200'/>
           </Link>
       </div>
-       <h1 className='text-main-color dark:text-text-color text-[0.5rem] md:text-xs min-w-full'>
+       {/* <h1 className='text-main-color dark:text-text-color text-[0.5rem] md:text-xs min-w-full'>
             Designed by my baby <Link href={'https://github.com/biancavictorino'} target='blank' className='text-accent-color hover:translate-y-[-5px] font-medium'>
             Bianca Marie</Link> and built using NextJs and Tailwind CSS.
+       </h1> */}
+       <h1 className='text-main-color dark:text-text-color text-[0.5rem] md:text-xs min-w-full'>
+           Built using NextJs and Tailwind CSS
        </h1>
     </div>
   )
