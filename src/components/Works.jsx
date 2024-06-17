@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
+import Link from 'next/link'
 
 export default function Works() {
   return (
@@ -9,7 +10,7 @@ export default function Works() {
             subTitle={'Works'}
         />
         <div className='text-center py-20'>
-            <h1 className='text-main-color dark:text-title-color font-regular'>Upcoming projects... To see my projects, please click the github icon on the left.</h1>
+            <h1 className='text-main-color dark:text-title-color font-regular text-sm md:text-base'>Upcoming projects... To see my projects, you can visit <Link href={'https://github.com/Jhoneric12'} target='blanl' className='underline'>Here</Link></h1>
         </div>
     </section>
   )
