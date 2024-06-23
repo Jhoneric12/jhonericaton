@@ -27,7 +27,7 @@ export default function AboutMe() {
                     explore the applications, websites, or innovative solutions I've built – a testament to my dedication and 
                     ever-evolving skillset.
                 </p>
-                <Button btnText={'Resume'}/>
+                <Button btnText={'Download CV'}/>
             </div>
             <div className='lg:w-[40%]'>
                 <h1 className='text-main-color dark:text-title-color text-lg font-bold mb-4'><span className='text-accent-color'>Technologies</span> I use</h1>

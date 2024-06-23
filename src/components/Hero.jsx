@@ -16,7 +16,7 @@ export default function Hero() {
           and engineering seamless digital interactions I'm committed to redefining the way users engage
           with online platforms.
         </p>
-        <Button btnText={'Resume'}/>
+        <Button btnText={'Download CV'}/>
       </div>
     </section>
   )
