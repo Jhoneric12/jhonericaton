@@ -19,21 +19,21 @@ export const Technologies = [
     },
     {
         id: 2,
-        lang: 'NextJs',
-        icon: NextJs,
-        alt: 'NextJs'
-    },
-    {
-        id: 3,
         lang: 'Laravel',
         icon: Laravel,
         alt: 'Laravel'
     },
     {
-        id: 4,
-        lang: 'Javascript',
+        id: 3,
+        lang: 'JavaScript',
         icon: JavaS,
-        alt: 'Javascript'
+        alt: 'JavaScript'
+    },
+    {
+        id: 4,
+        lang: 'PHP',
+        icon: Php,
+        alt: 'PHP'
     },
     {
         id: 5,
@@ -55,24 +55,18 @@ export const Technologies = [
     },
     {
         id: 8,
-        lang: 'PHP',
-        icon: Php,
-        alt: 'PHP'
-    },
-    {
-        id: 9,
         lang: 'MySql',
         icon: MySql,
         alt: 'MYSQL'
     },
     {
-        id: 10,
+        id: 9,
         lang: 'Figma',
         icon: Figma,
         alt: 'Figma'
     },
     {
-        id: 11,
+        id: 10,
         lang: 'Postman',
         icon: PostMan,
         alt: 'Postman'
