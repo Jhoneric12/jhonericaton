@@ -3,6 +3,7 @@ import SectionTitle from './SectionTitle'
 import { Technologies } from '@/data/tech'
 import Image from 'next/image'
 import Button from './Button'
+import Link from 'next/link'
 
 export default function AboutMe() {
   return (
@@ -27,7 +28,9 @@ export default function AboutMe() {
                     explore the applications, websites, or innovative solutions I've built – a testament to my dedication and 
                     ever-evolving skillset.
                 </p>
-                <Button btnText={'Download CV'}/>
+                <Link href={'/Latest-CV.pdf'}>
+                    <Button btnText={'Download CV'}/>
+                </Link>
             </div>
             <div className='lg:w-[40%]'>
                 <h1 className='text-main-color dark:text-title-color text-lg font-bold mb-4'><span className='text-accent-color'>Technologies</span> I use</h1>

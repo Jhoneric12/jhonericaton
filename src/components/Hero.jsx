@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Link from 'next/link'
 
 export default function Hero() {
 
@@ -16,7 +17,9 @@ export default function Hero() {
           and engineering seamless digital interactions I'm committed to redefining the way users engage
           with online platforms.
         </p>
-        <Button btnText={'Download CV'}/>
+        <Link href={'/Latest-CV.pdf'}>
+          <Button btnText={'Download CV'}/>
+        </Link>
       </div>
     </section>
   )
