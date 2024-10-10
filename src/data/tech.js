@@ -13,60 +13,66 @@ import PostMan from '../assets/postman 1.png'
 export const Technologies = [
     {
         id: 1,
+        lang: 'NextJs',
+        icon: NextJs,
+        alt: 'NextJs'
+    },
+    {
+        id: 2,
         lang: 'ReactJs',
         icon: ReactJs,
         alt: 'React'
     },
     {
-        id: 2,
+        id: 3,
         lang: 'Laravel',
         icon: Laravel,
         alt: 'Laravel'
     },
     {
-        id: 3,
+        id: 4,
         lang: 'JavaScript',
         icon: JavaS,
         alt: 'JavaScript'
     },
     {
-        id: 4,
+        id: 5,
         lang: 'PHP',
         icon: Php,
         alt: 'PHP'
     },
     {
-        id: 5,
+        id: 6,
         lang: 'Tailwind',
         icon: TailW,
         alt: 'Tailwind'
     },
     {
-        id: 6,
+        id: 7,
         lang: 'CSS',
         icon: Css,
         alt: 'CSS'
     },
     {
-        id: 7,
+        id: 8,
         lang: 'HTML',
         icon: html,
         alt: 'HTML'
     },
     {
-        id: 8,
+        id: 9,
         lang: 'MySql',
         icon: MySql,
         alt: 'MYSQL'
     },
     {
-        id: 9,
+        id: 10,
         lang: 'Figma',
         icon: Figma,
         alt: 'Figma'
     },
     {
-        id: 10,
+        id: 11,
         lang: 'Postman',
         icon: PostMan,
         alt: 'Postman'
