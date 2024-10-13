@@ -17,7 +17,7 @@ export default function Hero() {
           and engineering seamless digital interactions I'm committed to redefining the way users engage
           with online platforms.
         </p>
-        <Link href={'/Latest-CV.pdf'}>
+        <Link href={'/Aton - Internship CV.pdf'}>
           <Button btnText={'Download CV'}/>
         </Link>
       </div>
