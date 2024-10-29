@@ -24,7 +24,7 @@ export default function Works() {
                   <div className='flex gap-4 flex-wrap mt-2'>
                     {
                       project.techStack.map((stack, index) => (
-                        <div className='border-accent-color border px-3 py-2 text-xs text-light-main-color hover:cursor-default' key={index}>
+                        <div className='border-accent-color border px-3 py-2 text-xs text-main-color dark:text-light-main-color hover:cursor-default' key={index}>
                           {stack}
                         </div>
                       ))
