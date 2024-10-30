@@ -3,10 +3,12 @@ import SectionTitle from './SectionTitle'
 import Link from 'next/link'
 import { Projects } from '@/data/projects'
 import Image from 'next/image'
+import { FiExternalLink } from "react-icons/fi";
+import { LuGithub } from "react-icons/lu";
 
 export default function Works() {
   return (
-    <section className='px-6 md:px-10 lg:px-48'>
+    <section id='works' className='px-6 md:px-10 lg:px-48'>
         <SectionTitle 
             title={'Some of my '}
             subTitle={'Works'}
@@ -15,9 +17,9 @@ export default function Works() {
           {
             Projects.map((project) => (
               <div className='flex flex-col lg:flex-row gap-2 lg:gap-10' key={project.id}>
-                <div className='w-full lg:w-[40%]'>
-                  <Image className='mb-4 w-full shadow-md'  src={project.image} alt={project.alt}/>
-                </div>
+                <Link href={project.deploymentLink} target='blank' className='w-full lg:w-[40%] overflow-hidden rounded-lg '>
+                  <Image className='mb-4 w-full h-full shadow-md hover:scale-125 duration-700 z-10'  src={project.image} alt={project.alt}/>
+                </Link>
                 <div className='w-full lg:w-[60%] flex flex-col gap-2 lg:justify-center'>
                   <h1 className='text-accent-color dark:text-accent-color font-bold lg:text-lg'>{project.projectName}</h1>
                   <p className='text-main-color dark:text-text-color leading-7'>{project.description}</p>
@@ -29,6 +31,14 @@ export default function Works() {
                         </div>
                       ))
                     }
+                  </div>
+                  <div className='mt-4 flex gap-2'>
+                    <Link href={project.githubLink} target='blank'>
+                      <LuGithub className='text-xl text-main-color dark:text-light-main-color hover:text-accent-color dark:hover:text-accent-color duration-300'/>
+                    </Link>
+                    <Link href={project.deploymentLink} target='blank'>
+                      <FiExternalLink className='text-main-color text-xl dark:text-light-main-color font-light hover:text-accent-color dark:hover:text-accent-color duration-300' />
+                    </Link>
                   </div>
                 </div>
               </div>

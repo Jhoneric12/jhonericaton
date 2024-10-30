@@ -53,9 +53,9 @@ export default function Navbar() {
     <div className='z-30'>
       <motion.div  initial={{ x: '100%' }} animate={{ x: isOpen ? 0 : '100%' }} transition={{ type: 'tween', duration: 0.5 }} className={`${isOpen ? 'fixed h-screen bg-light-main-color dark:bg-main-color top-0 bottom-0 right-0 w-[70%] md:w-[60%] flex justify-center items-center shadow-xl z-40 blur-none' : 'hidden'}`}>
           <div className='flex flex-col gap-10 text-center text-lg text-main-color dark:text-title-color'>
-            <Link href={'#'}>Works</Link>
-            <Link href={'#'}>About Me</Link>
-            <Link href={'#'}>Contact</Link>
+            <Link onClick={handleOpenMenu} href={'#works'}>Works</Link>
+            <Link onClick={handleOpenMenu} href={'#about-me'}>About Me</Link>
+            <Link onClick={handleOpenMenu} href={'#contact'}>Contact</Link>
           </div>
           <svg onClick={handleOpenMenu} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className='w-6 h-6 absolute top-6 right-6 text-main-color dark:text-title-color'>
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -66,31 +66,35 @@ export default function Navbar() {
           {
             isDark ? 
             (
-              <Image
-                src={DarkMyLogo}
-                width={50}
-                height={45}
-                alt='My Logo'
-                className='w-auto h-auto'
-              />
+              <Link href={'#hero'}>
+                <Image
+                  src={DarkMyLogo}
+                  width={50}
+                  height={45}
+                  alt='My Logo'
+                  className='w-auto h-auto'
+                />
+              </Link>
             )
             :
             (
-              <Image
-                src={LightMyLogo}
-                width={50}
-                height={45}
-                alt='My Logo'
-                className='w-auto h-auto'
-              />
+              <Link href={'#hero'}>
+                <Image
+                  src={LightMyLogo}
+                  width={50}
+                  height={45}
+                  alt='My Logo'
+                  className='w-auto h-auto'
+                />
+              </Link>
             )
           }
         </div>
         <div className='flex gap-20'>
           <div className='w-full gap-20 hidden lg:flex lg:items-center text-main-color dark:text-title-color font-medium'>
-            <Link href={'#'}>Works</Link>
-            <Link href={'#'}>About Me</Link>
-            <Link href={'#'}>Contact</Link>
+            <Link className='hover:text-accent-color duration-300' href={'#works'}>Works</Link>
+            <Link className='hover:text-accent-color duration-300' href={'#about-me'}>About Me</Link>
+            <Link className='hover:text-accent-color duration-300' href={'#contact'}>Contact</Link>
           </div>
           <div className='flex items-center gap-4'>
             {

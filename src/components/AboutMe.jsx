@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function AboutMe() {
   return (
-    <section className='px-6 py-4 md:px-10 lg:px-48'>
+    <section id='about-me' className='px-6 py-4 md:px-10 lg:px-48'>
         <SectionTitle
             title={'About '}
             subTitle={'Me'}

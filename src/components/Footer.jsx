@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className='px-6 py-4 md:px-10 lg:px-48'>
+    <footer id='contact' className='px-6 py-4 md:px-10 lg:px-48'>
         <SectionTitle 
             title={"Let's "}
             subTitle={"Connect"}
