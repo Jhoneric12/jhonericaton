@@ -16,8 +16,8 @@ export default function Works() {
         <div className='py-20 flex flex-col gap-20'>
           {
             Projects.map((project) => (
-              <div className='flex flex-col lg:flex-row gap-2 lg:gap-10' key={project.id}>
-                <Link href={project.deploymentLink} target='blank' className='w-full lg:w-[40%] overflow-hidden rounded-lg '>
+              <div className='flex flex-col justify-center lg:flex-row gap-2 lg:gap-10' key={project.id}>
+                <Link href={project.deploymentLink} target='blank' className='w-full lg:w-[40%] lg:h-[17rem] overflow-hidden rounded-lg '>
                   <Image className='mb-4 w-full h-full shadow-md hover:scale-125 duration-700 z-10'  src={project.image} alt={project.alt}/>
                 </Link>
                 <div className='w-full lg:w-[60%] flex flex-col gap-2 lg:justify-center'>
