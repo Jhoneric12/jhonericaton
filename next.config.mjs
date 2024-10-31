@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    optimizeFonts: true
-};
+const nextConfig = {};
 
 export default nextConfig;
