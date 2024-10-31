@@ -17,7 +17,7 @@ export default function Works() {
           {
             Projects.map((project) => (
               <div className='flex flex-col items-center justify-center lg:flex-row gap-2 lg:gap-10' key={project.id}>
-                <Link href={project.deploymentLink} target='blank' className='w-full lg:w-[40%] lg:h-[17rem] overflow-hidden rounded-lg '>
+                <Link href={project.deploymentLink} target='blank' className='w-full md:w-full md:h-[20rem] lg:w-[30rem] lg:h-[17rem] overflow-hidden rounded-lg mb-4 '>
                   <Image className='mb-4 w-full h-full shadow-md hover:scale-125 duration-700 z-10'  src={project.image} alt={project.alt}/>
                 </Link>
                 <div className='w-full lg:w-[60%] flex flex-col gap-2 lg:justify-center'>
