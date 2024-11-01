@@ -10,7 +10,7 @@ import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
-    <main className='bg-light-main-color dark:bg-main-color transition-colors duration-300 selection:bg-accent-color selection:text-white antialiased scroll-smooth'>
+    <main className='bg-light-main-color dark:bg-main-color transition-colors duration-300 selection:bg-accent-color selection:text-white antialiased scroll-smooth tracking-wide'>
       <Navbar/>
       <div className="z-0">
         <Hero/>

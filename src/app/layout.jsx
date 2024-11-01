@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeProvider from "./Context/ThemeProvider";
+import Logo from '../assets/logo-light.png'
 
 const poppins = Inter({ 
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="../app/icon.png" type="image/<generated>" sizes="<generated>"/>
+      </head>
       <body className={poppins.className}>
         <ThemeProvider>
           <div>
