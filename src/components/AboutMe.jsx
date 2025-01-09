@@ -28,7 +28,7 @@ export default function AboutMe() {
                     explore the applications, websites, or innovative solutions I've built – a testament to my dedication and 
                     ever-evolving skillset.
                 </p>
-                <Link href={'/Latest-CV.pdf'}>
+                <Link target='blank' href={'/Eric - CV.pdf'}>
                     <Button btnText={'Download CV'}/>
                 </Link>
             </div>
