@@ -52,7 +52,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-5 pt-1">
+        <div className="hidden lg:flex items-center gap-5 pt-1">
           <Link href={"https://www.linkedin.com/in/jhon-eric-aton-5535a8245/"} target="_blank">
             <ImLinkedin2 className="text-main-color dark:text-title-color text-xl hover:text-accent-color hover:translate-y-[-3px] dark:hover:text-accent-color transition duration-200" />
           </Link>

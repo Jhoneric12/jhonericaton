@@ -15,7 +15,7 @@ export default function AboutMe() {
   return (
     <section id="about-me" className="px-6 md:px-10 lg:px-48">
       <SectionTitle title={"About "} subTitle={"Me"} />
-      <div className="mx-auto grid w-full max-w-6xl gap-14 py-12 lg:gap-16 xl:grid-cols-[1.2fr_0.8fr]">
+      <div className="grid w-full gap-14 py-12 lg:gap-16 xl:grid-cols-[1.2fr_0.8fr]">
         <div className="flex flex-col items-start gap-5">
           <h1 className="text-main-color dark:text-title-color text-2xl font-bold md:text-3xl">Hi there!</h1>
           <p className="text-main-color dark:text-title-color leading-7 md:leading-8">
