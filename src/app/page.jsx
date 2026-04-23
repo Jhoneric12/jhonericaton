@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import MyName from "@/components/MyName";
 import AboutMe from "@/components/AboutMe";
 import Stack from "@/components/Stack";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Socials />
         <Email />
         <Works />
+        <Timeline />
         <AboutMe />
         <Footer />
         <MyName />

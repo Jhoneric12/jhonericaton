@@ -20,7 +20,7 @@ import Expo from "../assets/expo.svg";
 export const Technologies = [
   {
     id: 1,
-    lang: "ReactJs",
+    lang: "React",
     icon: ReactJs,
     alt: "React",
   },

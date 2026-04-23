@@ -62,6 +62,9 @@ export default function Navbar() {
           <Link onClick={handleOpenMenu} href={"#about-me"}>
             About Me
           </Link>
+          <Link onClick={handleOpenMenu} className="hover:text-accent-color duration-300" href={"#timeline"}>
+            My Experience
+          </Link>
           <Link onClick={handleOpenMenu} href={"#contact"}>
             Contact
           </Link>
@@ -97,6 +100,9 @@ export default function Navbar() {
             </Link>
             <Link className="hover:text-accent-color duration-300" href={"#about-me"}>
               About Me
+            </Link>
+            <Link className="hover:text-accent-color duration-300" href={"#timeline"}>
+              My Experience
             </Link>
             <Link className="hover:text-accent-color duration-300" href={"#contact"}>
               Contact
