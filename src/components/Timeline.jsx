@@ -31,8 +31,8 @@ export default function Timeline() {
             return (
               <motion.div
                 key={item.id}
-                className={`relative flex flex-col lg:flex-row lg:items-center lg:gap-0 ${
-                  isLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+                className={`relative flex flex-col xl:flex-row lg:items-center lg:gap-0 ${
+                  isLeft ? "xl:flex-row" : "xl:flex-row-reverse"
                 }`}
                 initial={{ opacity: 0, x: isLeft ? -44 : 44 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ export default function Timeline() {
                 transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
               >
                 {/* Card */}
-                <div className={`w-full lg:w-[calc(50%-2.5rem)] ${isLeft ? "lg:pr-8" : "lg:pl-8"}`}>
+                <div className={`w-full xl:w-[calc(50%-2.5rem)] ${isLeft ? "xl:pr-8" : "xl:pl-8"}`}>
                   <div className="group rounded-2xl border border-main-color/10 bg-white/40 p-5 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-accent-color/30 hover:shadow-md dark:border-title-color/10 dark:bg-white/5 dark:hover:border-accent-color/30">
                     {/* Type badge + year */}
                     <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -76,7 +76,7 @@ export default function Timeline() {
                 </div>
 
                 {/* Empty spacer for the other side */}
-                <div className="hidden lg:block lg:w-[calc(50%-2.5rem)]" />
+                <div className="hidden xl:block xl:w-[calc(50%-2.5rem)]" />
               </motion.div>
             );
           })}
