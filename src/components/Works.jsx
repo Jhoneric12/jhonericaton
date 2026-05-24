@@ -20,7 +20,7 @@ export default function Works() {
           <motion.div
             key={project.id}
             className={`flex flex-col items-start justify-center gap-8 lg:gap-14 ${
-              idx % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+              idx % 2 === 0 ? "xl:flex-row" : "xl:flex-row-reverse"
             }`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -34,19 +34,21 @@ export default function Works() {
               }
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full lg:w-[45%] flex-shrink-0 overflow-hidden rounded-xl border border-accent-color/20 shadow-md group"
+              className="w-full xl:w-[45%] flex-shrink-0 overflow-hidden rounded-xl border border-accent-color/20 shadow-md group"
             >
-              <div className="relative w-full h-[14rem] md:h-[20rem] lg:h-[17rem] overflow-hidden">
+              <div className="relative w-full h-[14rem] sm:h-[18rem] md:h-[22rem] lg:h-[20rem] xl:h-[22rem] overflow-hidden">
                 <Image
                   className="object-cover group-hover:scale-110 duration-700"
                   src={project.image}
                   alt={project.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 45vw"
                 />
               </div>
             </Link>
 
             {/* Project Content */}
-            <div className="w-full lg:w-[55%] flex flex-col gap-3">
+            <div className="w-full xl:w-[55%] flex flex-col gap-3">
               {/* Role & Company */}
               <div className="flex flex-wrap items-center gap-2">
                 {project.role && (
